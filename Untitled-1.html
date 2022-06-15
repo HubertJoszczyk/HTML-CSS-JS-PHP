@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+    <title>Listy</title>
+    <meta charset="UFT-8">
+</head>
+<body>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h4>Formularz kontaktowy</h4>
+    <p>Podaj swoje nazwisko i imię:
+    <input type="text" name="nazwisko" value="" size="30"></p>
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h4>Formularz kontaktowy</h4>
+    <p>Podaj swoje nazwisko i imię:
+    <input type="text" name="nazwisko" value="" size="30"></p>
+    <p><input type="checkbox" name="opcje">
+    Zgadzam się na przetwarzanie moich danych osobowych</p>
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h3>Wykształcenie:</h3>
+    <p><input type="radio" value="Podstawowe" name="grupa_opcji" checked>Podstawowe<br>
+    <input type="radio" value="Średnie" name="grupa_opcji" checked>Średnie<br>
+    <input type="radio" value="Wyższe" name="grupa_opcji" checked>Wyższe<br>
+    </p>
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <p>Podaj hasło:
+    <input type="password" name="hasło" size="10" maxlength="14"></p>
+</form>
+<form enctype="multipart/form-data" action="http://localhost/skrypt_form.php" method="POST">
+    <p>Wyślij ten plik
+    <input type="file" name="plik" size="30">
+    </p>
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h4>Formularz kontaktowy</h4>
+    <p>Podaj swoje nazwisko i imię:</p>
+    <p><input type="text" name="nazwisko" value="" size="30"></p>
+    <p>Wykształcenie:</p>
+    <p><input type="radio" value="Podstawowe" name="grupa_opcji" checked>Podstawowe<br>
+    <input type="radio" value="Średnie" name="grupa_opcji" checked>Średnie<br>
+    <input type="radio" value="Wyższe" name="grupa_opcji" checked>Wyższe<br>
+    </p>
+    <p><input type="checkbox" name="opcje">
+    Zgadzam się na przetwarzanie moich danych osobowych</p>
+    <p><input type="submit" value="Wyślij">&nbsp; &nbsp;
+    <input type="reset" value="Wyczyść"></p>
+</form>
+<input type="hidden" name="Data urodzenia" value="3 marca 1980">
+<input type="button" value="Przycisk">
+<input type="color" value="#F0F0F0">
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <p>Wybierz kolor z podanej palety:</p>
+    <input type="color" name="Kolor" value="#ff0000">
+    <input type="submit" value="Wyślij">
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <p>Wpisz adres e-mail:</p>
+    <input type="email" name="email">
+    <input type="submit" value="Wyślij">
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <p>Wprowadź liczby z przedziału od 10 do 100:</p>
+    <input type="number" name="liczba" min="10" max="100" step="5" value="20">
+    <input type="submit" value="Wyślij">
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <p>Podaj date urodzin:</p>
+    <input type="date" name="data">
+    <input type="submit" value="Wyślij">
+</form>
+<button type="submit" name="przycisk1">Wyślij</button>
+<button type="reset" name="przycisk2">Usuń</button>
+<button type="button" name="przycisk1">Powrót</button>
+
+<button type="submit" name="przycisk" style="font: 12pt arial; background-color: red;">Przycisk</button>
+<button type="submit" name="obrazek">
+<img src="obraz.png" alt="formularz">
+</button>
+<form action="mailto:nauka@gmail.com" method="POST">
+    <h2>Formularz kontaktowy:</h2>
+    <p>Podaj swoje nazwisko i imię:</p>
+    <input name="adres" value="" size="30">
+    <h3>Wykształcenie:</h3>
+    <label><input type="radio" value="Podstawowe" name="grupa_opcji" checked>Podstawowe</label><br>
+    <label><input type="radio" value="Średnie" name="grupa_opcji" checked>Średnie</label><br>
+    <label><input type="radio" value="Wyższe" name="grupa_opcji" checked>Wyższe</label><br>
+    <label><input type="checkbox" name="opcje">
+    Zgadzam sie na przetwarzanie moich danych osobowych</label>
+    <input type="submit" value="Wyślij">&nbsp; &nbsp;
+    <input type="reset" value="Wyczyść">
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h3>Dane osobowe:</h3>
+    <p>Podaj swoje nazwisko i imię:</p>
+    <input name="dane" value="" size="30">
+<fieldset>
+    <legend><h4>Wykształcenie:</h4></legend>
+    <label><input type="radio" value="Podstawowe" name="grupa_opcji" checked>Podstawowe</label><br>
+    <label><input type="radio" value="Średnie" name="grupa_opcji" checked>Średnie</label><br>
+    <label><input type="radio" value="Wyższe" name="grupa_opcji" checked>Wyższe</label><br>
+</fieldset>
+    <label>Pracuję:<input type="checkbox" name="opcje"></label>
+    <input type="submit" value="Wyślij">&nbsp; &nbsp;
+    <input type="reset" value="Wyczyść">
+</form>
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h3>Formularz wyboru języka:</h3>
+<select name="języki" size="5" multiple>
+    <option>Język angielski</option>
+    <option value="Język niemiecki" selected="selected">Język niemiecki</option>
+    <option value="Język francuski" selected="selected">Język francuski</option>
+    <option value="Język włoski" selected="selected">Język włoski</option>
+    <option value="Język rosyjski" selected="selected">Język rosyjski</option>
+    <option value="Język hiszpański" selected="selected">Język hiszpański</option>
+</select>
+</form>
+
+<form action="http://localhost/skrypt_form.php" method="POST">
+<h3>Formularz wyboru języka:</h3>
+<select name="języki" size="10" multiple>
+<optgroup label="Języki słowiańskie">
+    <option selected="selected" value="polski">polski</option>
+    <option value="rosyjski">rosyjski</option>
+    <option value="ukraiński">ukraiński</option>
+</optgroup>
+<optgroup label="Języki germańskie">
+    <option value="angielski">angielski</option>
+    <option value="niemiecki">niemiecki</option>
+</optgroup>
+<optgroup label="Języki romańskie">
+    <option value="francuski">francuski</option>
+    <option value="włoski">włoski</option>
+    <option value="hiszpański">hiszpański</option>
+</optgroup>
+<optgroup label="Języki bałtycki">
+    <option value="litewski">litewski</option>
+    <option value="łotewski">łotewski</option>
+</optgroup>
+</select>
+</form>
+
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h3>Życiorys:</h3>
+    <textarea name="blok" rows="8" cols="40">Wprowadź swój tekst</textarea>
+</form>
+
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h3>Życiorys:</h3>
+    <textarea name="blok" style="width: 250px; height: 100px;">Wprowadź swój tekst</textarea>
+</form>
+
+<form action="mailto:nauka@gmail.com" method="POST">
+    <p>Przycisk aktywny &nbsp; &nbsp; &nbsp; &nbsp; Przycisk nieaktywny</p>
+    <input type="submit" value="Wyślij dane" name="przycisk1" />&nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="submit" value="Wyślij dane" name="przycisk2" disabled="disabled">
+</form>
+
+<input type="radio" value="Podstawowe" name="grupa_opcji" accesskey="P">Podstawowe [skrót Alt+P]<br>
+<input type="radio" value="Średnie" name="grupa_opcji" accesskey="S">Średnie [skrót Alt+S]<br>
+<input type="radio" value="Wyższe" name="grupa_opcji" accesskey="W">Wyższe [skrót Alt+W]<br>
+
+<input list="nazwa listy">
+<datalist id="nazwa listy">
+<option value="wartość1"></option>
+<option value="wartość2"></option>
+<option value="wartość3"></option>
+</datalist>
+
+<form action="http://localhost/skrypt_form.php" method="POST">
+    <h3>Dane osobowe:</h3>
+    <p>Podaj swoje imie i nazwisko:</p>
+    <input name="dane" value="" size="30">
+    <h4>Wykształcenie:</h4>
+    <input list="wykształcenie" name="wykaz">
+    <datalist id="wykształcenie">
+    <option value="podstawowe"></option>
+    <option value="średnie"></option>
+    <option value="wyższe"></option>
+    </datalist>
+    <input type="submit" value="Wyślij">
+</form>
+
+
+<input name="adres" type="text" autofocus>
+
+<input type="text" autocomplete="off">
+
+<input type="text" required>
+
+<input type="text" name="kod" pattern="[0-9]{2}-[0-9]{3}">
+</body>
+</html>
