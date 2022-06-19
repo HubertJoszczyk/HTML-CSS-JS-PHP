@@ -1,0 +1,33 @@
+/* w divach używać na egzaminie id */
+/* w css aby odwołać się do id robimy #nazwa_id */
+/* robiąc float:cokolwiek div pod spodem musi mieć clear:both*/
+/* wyrównanie diva w poziomie*/
+margin-left: auto;
+margin-right: auto;
+/*wyrównanie tekstu w poziomie*/
+text-align: center;
+/*kolor tła diva*/
+background-color: blue;
+background-color: rgb(#FF,#A3,#CC);
+/*"rodzina" czcionki*/
+font-family: Arial;
+/*wielkość czcionki*/
+font-size: 20px;
+/*odstęp na zewnątrz diva*/
+margin: 5px;
+/*odstęp wewnętrz diva*/
+padding: 10px;
+/*obramowanie diva*/
+border: 5px solid black;
+/*odstęp pomiędzy liniami textu*/
+line-height: 3px;
+/*"dekoracja textu" głównie linki(podkreślenie linków)*/
+text-decoration: none;
+/*właściwości linku po najechaniu myszką*/
+a:hover{
+	text-decoration: none;
+}
+/*pozycjonowanie diva*/
+/*wpisując będzie liczyć od górnego lewego rogu ekranu*/
+position: relative;
+left: 20px;
